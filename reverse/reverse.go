@@ -1,16 +1,10 @@
 package main
 
-import(
-    "fmt"
-)
-
 func ReverseMatch(s_ary []string) (result_ary []string) {
-    
     for _, str := range s_ary {
-        fmt.Println(ReverseCheck(str, s_ary))
+        result_ary = append(result_ary, ReverseCheck(str, s_ary))
     }
-
-    return []string{}
+    return result_ary
 }
 
 func ReverseCheck(s string, s_ary []string) (rating string) {
