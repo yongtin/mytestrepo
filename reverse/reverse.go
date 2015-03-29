@@ -2,7 +2,10 @@ package main
 
 func ReverseMatch(s_ary []string) (result_ary []string) {
     for _, str := range s_ary {
-        result_ary = append(result_ary, ReverseCheck(str, s_ary))
+        goodstr := ReverseCheck(str, s_ary)
+        if len(goodstr) > 0 {
+            result_ary = append(result_ary, goodstr)
+        }
     }
     return result_ary
 }

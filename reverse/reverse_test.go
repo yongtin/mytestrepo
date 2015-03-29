@@ -27,11 +27,11 @@ func TestReverse(t *testing.T) {
         },
         {
             Input: []string{ "tsang", "gnast", "tea" },
-            WantWords: []string{ "gnast", "tsang" },
+            WantWords: []string{ "tsang", "gnast" },
         },
         {
             Input: []string{ "tsang", "gnast", "tea", "aet", "god", "dog" },
-            WantWords: []string{ "gnast", "tsang" },
+            WantWords: []string{ "tsang", "gnast", "tea", "aet", "god", "dog" },
         },
     }
     
